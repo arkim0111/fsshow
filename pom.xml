@@ -1,7 +1,8 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
-  <groupId>com.project</groupId>
+  <groupId>com.myproject</groupId>
   <artifactId>fsshow</artifactId>
   <packaging>war</packaging>
   <version>1.0-SNAPSHOT</version>
@@ -9,7 +10,10 @@
   <url>http://maven.apache.org</url>
 
   <properties>
+    <java-version>11</java-version>
     <org.springframework-version>5.2.23.RELEASE</org.springframework-version>
+    <maven.compiler.source>11</maven.compiler.source>
+    <maven.compiler.target>11</maven.compiler.target>
   </properties>
 
   <dependencies>
@@ -19,10 +23,11 @@
       <version>${org.springframework-version}</version>
     </dependency>
 
+    <!-- Test -->
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
-      <version>3.8.1</version>
+      <version>4.7</version>
       <scope>test</scope>
     </dependency>
   </dependencies>
