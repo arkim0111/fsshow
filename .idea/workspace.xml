@@ -9,30 +9,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3e998dbe-1bb4-4fad-961a-077e475d0283" name="Changes" comment="MAIN PAGE 셋팅 완료">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sql/MEMBER" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/myproject/fsshow/admin/AdminController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/myproject/fsshow/admin/AdminDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/myproject/fsshow/admin/AdminService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/myproject/fsshow/admin/AdminServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/myproject/fsshow/board/BoardController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/myproject/fsshow/board/BoardDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/myproject/fsshow/board/BoardService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/myproject/fsshow/board/BoardServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/myproject/fsshow/login/LoginController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/myproject/fsshow/login/LoginDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/myproject/fsshow/login/LoginService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/myproject/fsshow/login/LoginServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/myproject/fsshow/member/MemberController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/myproject/fsshow/member/MemberDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/myproject/fsshow/member/MemberService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/myproject/fsshow/member/MemberServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/myproject/fsshow/show/ShowDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/myproject/fsshow/show/ShowService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/myproject/fsshow/show/ShowServiceImpl.java" afterDir="false" />
+    <list default="true" id="3e998dbe-1bb4-4fad-961a-077e475d0283" name="Changes" comment="기본 폴더 + sql문 생성">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/myproject/fsshow/member/MemberDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/mapper/BoardMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/mapper/FileMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/mapper/MemberMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/mapper/ReplyMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/mapper/ShowMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/spring/mybatis-config.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/spring/root_context.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/myproject/fsshow/controller/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/myproject/fsshow/show/ShowController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sql/BOARD" beforeDir="false" afterPath="$PROJECT_DIR$/sql/BOARD" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sql/MEMBER" beforeDir="false" afterPath="$PROJECT_DIR$/sql/MEMBER" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sql/REPLY" beforeDir="false" afterPath="$PROJECT_DIR$/sql/REPLY" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sql/SHOW" beforeDir="false" afterPath="$PROJECT_DIR$/sql/SHOW" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -199,7 +190,7 @@
       <workItem from="1686842545250" duration="1155000" />
       <workItem from="1686845968339" duration="537000" />
       <workItem from="1686846509048" duration="3861000" />
-      <workItem from="1686920988753" duration="1522000" />
+      <workItem from="1686920988753" duration="5660000" />
     </task>
     <task id="LOCAL-00001" summary="setting">
       <created>1686839246321</created>
@@ -229,7 +220,14 @@
       <option name="project" value="LOCAL" />
       <updated>1686890007416</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="기본 폴더 + sql문 생성">
+      <created>1686923074525</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1686923074525</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -240,6 +238,7 @@
     <MESSAGE value="setting2" />
     <MESSAGE value="Setting3" />
     <MESSAGE value="MAIN PAGE 셋팅 완료" />
-    <option name="LAST_COMMIT_MESSAGE" value="MAIN PAGE 셋팅 완료" />
+    <MESSAGE value="기본 폴더 + sql문 생성" />
+    <option name="LAST_COMMIT_MESSAGE" value="기본 폴더 + sql문 생성" />
   </component>
 </project>
