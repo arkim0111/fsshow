@@ -2,17 +2,17 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
-<mapper namespace="board">
+<mapper namespace="com.myproject.fsshow.member.MemberDTO">
 
     <!-- 각 페스티벌의 게시글 리스트 조회  -->
     <!-- 페스티벌 아이디에 맞는 게시글 리스트가 쭉 나옴  -->
     <select id="getFestBoardList" parameterType="String" resultType="hashmap">
         SELECT
-            BOARD_IDX, BOARD_MEM_ID, BOARD_TITLE, BOARD_CONTENT, BOARD_DATE, BOARD_FESTA_ID
+            BOARD_IDX, BOARD_MEM_ID, BOARD_TITLE, BOARD_CONTENT, BOARD_DATE, BOARD_SHOW_ID
         FROM
             BOARD
         WHERE
-            BOARD_FESTA_ID = #{BOARD_FESTA_ID}
+            BOARD_SHOW_ID = #{BOARD_SHOW_ID}
     </select>
 
     <!-- 게시글 작성 기능  -->
@@ -26,7 +26,7 @@
             BOARD_TITLE,
             BOARD_CONTENT,
             BOARD_DATE,
-            BOARD_FESTA_ID
+            BOARD_SHOW_ID
         )
         VALUES
             (
@@ -35,7 +35,7 @@
                 #{BOARD_TITLE},
                 #{BOARD_CONTENT},
                 SYSDATE,
-                #{BOARD_FESTA_ID}
+                #{BOARD_SHOW_ID}
             )
     </insert>
 
@@ -43,7 +43,7 @@
     <!-- 페스티벌 아이디에 맞는 게시글 상세 보기  -->
     <select id = "selectOneBoard" parameterType="hashmap" resultType="hashmap">
         SELECT
-            BOARD_IDX, BOARD_MEM_ID, BOARD_TITLE, BOARD_CONTENT, BOARD_DATE, BOARD_FESTA_ID
+            BOARD_IDX, BOARD_MEM_ID, BOARD_TITLE, BOARD_CONTENT, BOARD_DATE, BOARD_SHOW_ID
         FROM
             BOARD
         WHERE
@@ -75,7 +75,7 @@
     <!-- (관리자 페이지) 모든 게시글 리스트 조회  -->
     <select id="getAllBoardList" resultType="hashmap">
         SELECT
-            BOARD_IDX, BOARD_MEM_ID, BOARD_TITLE, BOARD_CONTENT, BOARD_DATE, BOARD_FESTA_ID
+            BOARD_IDX, BOARD_MEM_ID, BOARD_TITLE, BOARD_CONTENT, BOARD_DATE, BOARD_SHOW_ID
         FROM
             BOARD
     </select>
@@ -83,7 +83,7 @@
     <!-- (마이 페이지) 내가 쓴 게시글 조회  -->
     <select id="getMyBoard" parameterType="String" resultType="hashmap">
         SELECT
-            BOARD_IDX, BOARD_MEM_ID, BOARD_TITLE, BOARD_CONTENT, BOARD_DATE, BOARD_FESTA_ID
+            BOARD_IDX, BOARD_MEM_ID, BOARD_TITLE, BOARD_CONTENT, BOARD_DATE, BOARD_SHOW_ID
         FROM
             BOARD
         WHERE
