@@ -1,7 +1,6 @@
-package com.myproject.fsshow.dao;
+package com.myproject.fsshow.common;
 
 import java.util.List;
-import java.util.Map;
 
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;

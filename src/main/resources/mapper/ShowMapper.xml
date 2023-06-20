@@ -2,86 +2,21 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
-<mapper namespace="com.myproject.fsshow.show.ShowDTO">
+<mapper namespace="com.myproject.fsshow.show.ShowVO">
 
-    <select id="selectOneShow" parameterType="String" resultType="hashmap">
+    <select id="selectShowList" parameterType="hashmap" resultType="hashmap">
         SELECT
             SHOW_ID,
             SHOW_YEAR,
             SHOW_NAME,
             SHOW_ADDR,
-            SHOW_DATE
+            SHOW_DATE,
+            SHOW_POST_IMG,
+            SHOW_SEAT_IMG
         FROM
             SHOW
-        WHERE
-            SHOW_ID = #{SHOW_ID}
+
     </select>
 
 
-    <insert id="insertOneShow" parameterType="hashmap">
-        INSERT INTO
-            SHOW
-            (
-             SHOW_ID,
-             SHOW_YEAR,
-             SHOW_NAME,
-             SHOW_ADDR,
-             SHOW_DATE,
-             SHOW_CELEB,
-             SHOW_TICKET_DATE,
-             SHOW_TICKET_ADDR
-             )
-        VALUES
-            (
-             #{SHOW_ID},
-             #{SHOW_YEAR},
-             #{SHOW_NAME},
-             #{SHOW_ADDR, jdbcType=VARCHAR},
-             #{SHOW_DATE, jdbcType=VARCHAR},
-             #{SHOW_CELEB, jdbcType=VARCHAR},
-             #{SHOW_TICKET_DATE, jdbcType=VARCHAR},
-             #{SHOW_TICKET_ADDR, jdbcType=VARCHAR}
-             )
-    </insert>
-
-    <select id="selectShowList" resultType="hashmap">
-        SELECT
-            *
-        FROM
-            SHOW
-        WHERE
-            SHOW_LEVEL = 1
-    </select>
-
-    <select id="selectReqShowList" resultType="hashmap">
-        SELECT
-            *
-        FROM
-            SHOW
-        WHERE
-            SHOW_LEVEL = 0
-    </select>
-
-    <update id="updateOneShow" parameterType="hashmap">
-        UPDATE
-            SHOW
-        SET
-            FESTA_YEAR = #{FESTA_YEAR},
-            FESTA_NAME = #{FESTA_NAME},
-            SHOW_ADDR = #{SHOW_ADDR, jdbcType=VARCHAR},
-            FESTA_DATE = #{FESTA_DATE, jdbcType=VARCHAR},
-            FESTA_CELEB = #{FESTA_CELEB, jdbcType=VARCHAR},
-            FESTA_TICKET_DATE = #{FESTA_TICKET_DATE, jdbcType=VARCHAR},
-            FESTA_TICKET_ADDR = #{FESTA_TICKET_ADDR, jdbcType=VARCHAR}
-        WHERE
-            SHOW_ID = #{SHOW_ID}
-    </update>
-
-    <update id="updateReqShow" parameterType="String">
-        UPDATE SHOW
-        SET
-            FESTA_LEVEL = 1
-        WHERE
-            SHOW_ID = #{SHOW_ID}
-    </update>
 </mapper>
