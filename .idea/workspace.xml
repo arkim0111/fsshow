@@ -9,17 +9,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3e998dbe-1bb4-4fad-961a-077e475d0283" name="Changes" comment="sql문 + 오라클 연결">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/myproject/fsshow/reply/ReplyDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/myproject/fsshow/show/ShowDTO.java" afterDir="false" />
+    <list default="true" id="3e998dbe-1bb4-4fad-961a-077e475d0283" name="Changes" comment="main 페이지 띄우기">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/myproject/fsshow/dao/AbstractDAO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/myproject/fsshow/show/ShowController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/myproject/fsshow/show/ShowController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/BoardMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/BoardMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/ReplyMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/ReplyMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sql/SHOW" beforeDir="false" afterPath="$PROJECT_DIR$/sql/SHOW" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/myproject/fsshow/show/ShowDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/myproject/fsshow/show/ShowDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/myproject/fsshow/show/ShowDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/myproject/fsshow/show/ShowDTO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/ShowMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/ShowMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/spring/mybatis-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/spring/mybatis-config.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/spring/mybatis-config.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/spring/root_context.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/spring/root_context.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -188,7 +185,9 @@
       <workItem from="1686845968339" duration="537000" />
       <workItem from="1686846509048" duration="3861000" />
       <workItem from="1686920988753" duration="5975000" />
-      <workItem from="1686933305716" duration="5354000" />
+      <workItem from="1686933305716" duration="7858000" />
+      <workItem from="1687237653435" duration="610000" />
+      <workItem from="1687247233097" duration="2703000" />
     </task>
     <task id="LOCAL-00001" summary="setting">
       <created>1686839246321</created>
@@ -232,7 +231,14 @@
       <option name="project" value="LOCAL" />
       <updated>1686933283760</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="main 페이지 띄우기">
+      <created>1686940691255</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1686940691256</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -245,6 +251,7 @@
     <MESSAGE value="MAIN PAGE 셋팅 완료" />
     <MESSAGE value="기본 폴더 + sql문 생성" />
     <MESSAGE value="sql문 + 오라클 연결" />
-    <option name="LAST_COMMIT_MESSAGE" value="sql문 + 오라클 연결" />
+    <MESSAGE value="main 페이지 띄우기" />
+    <option name="LAST_COMMIT_MESSAGE" value="main 페이지 띄우기" />
   </component>
 </project>

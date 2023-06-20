@@ -10,12 +10,11 @@
             SHOW_YEAR,
             SHOW_NAME,
             SHOW_ADDR,
-            SHOW_DATE,
-            SHOW_CELEB
+            SHOW_DATE
         FROM
             SHOW
         WHERE
-            FESTA_ID = #{FESTA_ID}
+            SHOW_ID = #{SHOW_ID}
     </select>
 
 
