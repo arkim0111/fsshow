@@ -13,7 +13,7 @@ public class ShowDAO extends AbstractDAO {
 
     @SuppressWarnings("unchecked")
     public List<Map<String, Object>> selectShowList(Map<String, Object> map) throws Exception{
-        return (List<Map<String, Object>>) selectList("fsshow.selectShowList", map);
+        return (List<Map<String, Object>>)selectList("fsshow.selectShowList", map);
     }
 
 

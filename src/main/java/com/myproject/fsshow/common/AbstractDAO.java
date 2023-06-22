@@ -4,14 +4,17 @@ import java.util.List;
 
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
+import org.apache.ibatis.session.SqlSession;
 import org.mybatis.spring.SqlSessionTemplate;
 import org.springframework.beans.factory.annotation.Autowired;
+
+import javax.annotation.Resource;
 
 public class AbstractDAO {
     protected Log log = LogFactory.getLog(AbstractDAO.class);
 
-    @Autowired
-    private SqlSessionTemplate sqlSession;
+    @Resource(name = "sqlSession")
+    private SqlSession sqlSession;
 
     protected void printQueryId(String queryId) {
         if (log.isDebugEnabled()) {
