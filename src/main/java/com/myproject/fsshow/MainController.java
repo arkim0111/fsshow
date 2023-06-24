@@ -12,9 +12,9 @@ import java.util.Date;
 import java.util.Locale;
 
 @Controller
-public class HomeController {
+public class MainController {
 
-    private static final Logger logger = LoggerFactory.getLogger(HomeController.class);
+    private static final Logger logger = LoggerFactory.getLogger(MainController.class);
 
     @RequestMapping(value = "/", method = RequestMethod.GET)
     public String home(Locale locale, Model model) {

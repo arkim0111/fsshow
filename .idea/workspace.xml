@@ -9,31 +9,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3e998dbe-1bb4-4fad-961a-077e475d0283" name="Changes" comment="showList 관련 코드 작성 (오류 미해결)">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/myproject/fsshow/HomeController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/myproject/fsshow/common/LoggerInterceptor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/spring/appServlet/servlet-context.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/home.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
+    <list default="true" id="3e998dbe-1bb4-4fad-961a-077e475d0283" name="Changes" comment="showList 관련 코드 작성 (오류 미해결), 메인페이지는 해결">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/myproject/fsshow/common/AbstractDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/myproject/fsshow/common/AbstractDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/myproject/fsshow/main/MainController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/myproject/fsshow/show/ShowController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/myproject/fsshow/show/ShowController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/myproject/fsshow/show/ShowDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/myproject/fsshow/show/ShowDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/myproject/fsshow/show/ShowServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/myproject/fsshow/show/ShowServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/log4j.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/logback.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/BoardMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/FileMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/common/common.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/MemberMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/ReplyMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/ShowMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/showMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/spring/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mybatis-config.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/spring/dispatcher-servlet.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/myproject/fsshow/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/myproject/fsshow/MainController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/spring/root-context.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/spring/root-context.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/index.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/show/showList.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/show/showList.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -208,7 +187,8 @@
       <workItem from="1687237653435" duration="610000" />
       <workItem from="1687247233097" duration="3423000" />
       <workItem from="1687264956997" duration="29622000" />
-      <workItem from="1687452046913" duration="1763000" />
+      <workItem from="1687452046913" duration="3896000" />
+      <workItem from="1687615717605" duration="95000" />
     </task>
     <task id="LOCAL-00001" summary="setting">
       <created>1686839246321</created>
@@ -273,7 +253,14 @@
       <option name="project" value="LOCAL" />
       <updated>1687282218820</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="showList 관련 코드 작성 (오류 미해결), 메인페이지는 해결">
+      <created>1687454036889</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1687454036889</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -289,6 +276,7 @@
     <MESSAGE value="main 페이지 띄우기" />
     <MESSAGE value="spring 파일 수정" />
     <MESSAGE value="showList 관련 코드 작성 (오류 미해결)" />
-    <option name="LAST_COMMIT_MESSAGE" value="showList 관련 코드 작성 (오류 미해결)" />
+    <MESSAGE value="showList 관련 코드 작성 (오류 미해결), 메인페이지는 해결" />
+    <option name="LAST_COMMIT_MESSAGE" value="showList 관련 코드 작성 (오류 미해결), 메인페이지는 해결" />
   </component>
 </project>
